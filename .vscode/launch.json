@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Scotty3D",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/Scotty3D",
+        "args": ["--run-tests","A0"],                  // GUI デバッグなら空、テストなら ["--run-tests","A0"]
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "preLaunchTask": "Build Scotty3D",
+        "externalConsole": false,    // VSCode 内部コンソールで動かす
+        "MIMode": "gdb",
+        "setupCommands": [
+          { "description": "Enable pretty-printing", "text": "-enable-pretty-printing", "ignoreFailures": true }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,19 @@
+// .vscode/tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Scotty3D",       // Launch側で参照するタスク名
+        "type": "shell",
+        "command": "node",
+        "args": [
+          "Maekfile.js"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []             // エラー解析は不要
+      }
+    ]
+  }
+  
